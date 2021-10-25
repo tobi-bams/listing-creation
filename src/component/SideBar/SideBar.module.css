@@ -1,0 +1,13 @@
+.SideBarContainer {
+  width: 35%;
+  height: 100vh;
+  position: fixed;
+  background-color: #35a0ee;
+  padding-top: 2em;
+  padding-left: 3.5em;
+  padding-right: 3.5em;
+  padding-bottom: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

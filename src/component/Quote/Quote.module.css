@@ -1,0 +1,81 @@
+.QuoteContainer {
+  width: 23em;
+  height: 15em;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 8px 20px rgba(3, 17, 6, 0.03);
+  border-radius: 4px;
+  background-color: #ffffff;
+  position: relative;
+}
+
+.MainQuoteContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 2.5em;
+  padding-right: 2.5em;
+  padding-bottom: 1em;
+}
+
+.QuoteContent {
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  letter-spacing: 0.02em;
+  color: #a4aeb4;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.QuoteFooter {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5em;
+}
+
+.QuoteAuthor {
+  font-family: "Montserrat Alternates", sans-serif;
+  color: #07111b;
+  letter-spacing: 0.02em;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.AuthorDetail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.AuthorPosition {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  font-size: 0.875rem;
+  color: #a4aeb4;
+}
+
+.AuthorLogo {
+  color: #000000;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 1.625rem;
+}
+
+.AuthorLogo span {
+  color: #2696e8;
+}
+
+.QuotationContainer {
+  height: 3.5em;
+  width: 3.5em;
+  background-color: #ffffff;
+  box-shadow: 16px 12px 56px rgba(11, 29, 46, 0.15);
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -1.75em;
+  left: -1.2em;
+}
