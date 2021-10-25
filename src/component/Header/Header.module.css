@@ -1,0 +1,39 @@
+.HeaderContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Step {
+  color: #a4aeb4;
+  opacity: 0.8;
+  letter-spacing: 0.02em;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.HelpContainer {
+  display: flex;
+  align-items: center;
+}
+
+.Question {
+  color: #a4aeb4;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  margin-right: 0.4em;
+  font-size: 1rem;
+}
+
+.Link {
+  display: inline-block;
+  color: #2696e8;
+  letter-spacing: 0.02em;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+}
