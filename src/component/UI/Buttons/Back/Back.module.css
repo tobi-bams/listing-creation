@@ -1,0 +1,16 @@
+.BackContainer {
+  display: flex;
+  align-items: center;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  cursor: pointer;
+}
+
+.BackText {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+  color: #35a0ee;
+  margin-left: 0.5em;
+}

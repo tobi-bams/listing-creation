@@ -1,0 +1,35 @@
+.AssetContainer {
+  display: flex;
+  flex-direction: column;
+  width: 35.125em;
+  margin-top: 3em;
+  box-sizing: border-box;
+}
+
+.AssetHeaderContainer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2em;
+}
+
+.AssetHeader {
+  font-family: "Montserrat Alternates";
+  letter-spacing: 0.02em;
+  font-weight: 800;
+  color: #0b1d2e;
+  font-size: 1.75rem;
+  margin-bottom: 0.5em;
+}
+
+.AssetDescription {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+  color: #a4aeb4;
+}
+
+.SideBySide {
+  display: flex;
+  align-items: center;
+}

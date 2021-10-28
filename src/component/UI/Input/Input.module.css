@@ -1,0 +1,42 @@
+.InputContainer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2em;
+  margin-right: 0.3em;
+  width: 100%;
+}
+
+.InputLabel {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 0.875rem;
+  letter-spacing: 0.02em;
+  color: #A4AEB4;
+  transition: color 0.1s ease-out;
+}
+
+.FocusInputLabel {
+  color: #2696E8;
+}
+
+.Input {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 1.5rem;
+    letter-spacing: 0.02em;
+    color: #0B1D2E;
+    border: none;
+    border-bottom: 2px solid #D5D9DC;
+    outline: none;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    transition: border-bottom 0.1s ease-out;
+    width: 100%;
+    caret-color: #2696E8;
+}
+
+
+.Input:focus {
+    border-bottom: 2px solid #2696E8;
+}
+

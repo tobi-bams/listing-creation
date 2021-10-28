@@ -1,0 +1,45 @@
+.DropdownContainer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  margin-bottom: 2em;
+  outline: none;
+}
+
+.DropdownLabel {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 0.875rem;
+  letter-spacing: 0.02em;
+  color: #a4aeb4;
+  transition: color 0.2s ease-in-out;
+}
+
+.FocusDropDownLabel {
+  color: #2696E8;
+}
+
+.SelectedItemContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #d5d9dc;
+  padding-bottom: 0.3em;
+  padding-top: 0.3em;
+  padding-right: 0.5em;
+  cursor: pointer;
+}
+
+.SelectedItem {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 1.5rem;
+  letter-spacing: 0.02em;
+  color: #0b1d2e;
+}
+
+.DropdownImage {
+  transition: transform 0.2s ease-in-out;
+}
+

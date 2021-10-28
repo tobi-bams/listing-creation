@@ -1,0 +1,17 @@
+.DropdownItemContainer {
+  padding: 0.5em;
+  border-bottom: 1px solid #d5d9dc;
+  cursor: pointer;
+}
+
+.DropdownItemContainer:hover {
+    background-color: rgba(0,0,0,0.04);
+}
+
+.DropdownItem {
+  font-size: 1.2rem;
+  font-family: "Montserrat";
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: #a4aeb4;
+}

@@ -1,0 +1,16 @@
+.NextButton {
+  width: 9.56rem;
+  height: 3rem;
+  background-color: #35a0ee;
+  box-shadow: 0px 0px 20px rgba(53, 160, 238, 0.25);
+  border-radius: 4px;
+  color: #ffffff;
+  letter-spacing: 0.02em;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  margin-left: 1.5em;
+  cursor: pointer;
+}
