@@ -6,13 +6,22 @@ import Back from "../UI/Buttons/Back/Back";
 import Skip from "../UI/Buttons/Skip/Skip";
 import Next from "../UI/Buttons/Next/Next";
 
-const Footer = () => {
+const Footer = (props) => {
   return (
     <div className={classes.FooterContainer}>
-      <Back />
+      <Back
+        currentStep={props.currentStep}
+        setCurrentStep={props.setCurrentStep}
+      />
       <div>
-        <Skip />
-        <Next />
+        <Skip
+          currentStep={props.currentStep}
+          setCurrentStep={props.setCurrentStep}
+        />
+        <Next
+          currentStep={props.currentStep}
+          setCurrentStep={props.setCurrentStep}
+        />
       </div>
     </div>
   );

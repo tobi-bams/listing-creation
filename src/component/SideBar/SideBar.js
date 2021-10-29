@@ -5,13 +5,13 @@ import classes from "./SideBar.module.css";
 import Logo from "../../assets/logo.svg";
 import Progress from "../Progress/Progress";
 import Quote from "../Quote/Quote";
-const SideBar = () => {
+const SideBar = (props) => {
   return (
     <div className={classes.SideBarContainer}>
       <div className={classes.LogoContainer}>
         <img src={Logo} className={classes.Logo} alt="Alt" />
       </div>
-      <Progress />
+      <Progress currentStep={props.currentStep} />
       <Quote />
     </div>
   );

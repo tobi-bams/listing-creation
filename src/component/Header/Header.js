@@ -3,10 +3,10 @@ import React from "react";
 import classes from "./Header.module.css";
 import BlueArrowRight from "../../assets/BlueArrowRight.svg";
 
-const Header = () => {
+const Header = (props) => {
   return (
     <div className={classes.HeaderContainer}>
-      <p className={classes.Step}>{`STEP 1 OF 4`}</p>
+      <p className={classes.Step}>{`STEP ${props.currentStep} OF 4`}</p>
       <div className={classes.HelpContainer}>
         <p className={classes.Question}>Lost or have trouble?</p>
         <a href="/" className={classes.Link}>

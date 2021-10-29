@@ -25,6 +25,8 @@ const Input = (props) => {
         className={classes.Input}
         onFocus={onFocusHandler}
         onBlur={onBurlHandler}
+        onChange={props.onChange}
+        value={props.value}
       />
     </div>
   );

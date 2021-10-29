@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./styles.css";
 
 import SideBar from "./component/SideBar/SideBar";
@@ -8,13 +8,15 @@ import Asset from "./component/Assets/Asset";
 import Footer from "./component/Footer/Footer";
 
 function App() {
+  const [currentStep, setCurrentStep] = useState(1);
+
   return (
     <div>
-      <SideBar />
+      <SideBar currentStep={currentStep} />
       <MainContent>
-        <Header />
-        <Asset />
-        <Footer />
+        <Header currentStep={currentStep} />
+        {currentStep === 1 ? <Asset /> : ""}
+        <Footer currentStep={currentStep} setCurrentStep={setCurrentStep} />
       </MainContent>
     </div>
   );
