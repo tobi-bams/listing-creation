@@ -21,7 +21,7 @@ const Input = (props) => {
         {props.label}
       </label>
       <input
-        type="text"
+        type={props.type}
         className={classes.Input}
         onFocus={onFocusHandler}
         onBlur={onBurlHandler}

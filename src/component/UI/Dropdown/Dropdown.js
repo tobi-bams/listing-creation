@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import onClickOutside from "react-onclickoutside";
 
 import classes from "./Dropdown.module.css";
 import DropdownImage from "../../../assets/Dropdown.svg";
@@ -7,8 +6,6 @@ import DropdownItemContainer from "./DropdownItemsContainer/DropdownItemsContain
 
 function Dropdown(props) {
   const [isActive, setIsActive] = useState(false);
-
-  Dropdown.handleClickOutside = () => setIsActive(false);
 
   return (
     <div
@@ -47,8 +44,7 @@ function Dropdown(props) {
   );
 }
 
-const clickOutsideConfig = {
-  handleClickOutside: () => Dropdown.handleClickOutside,
-};
 
-export default onClickOutside(Dropdown, clickOutsideConfig);
+export default Dropdown;
+
+// export default onClickOutside(Dropdown, clickOutsideConfig);

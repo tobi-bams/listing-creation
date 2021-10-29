@@ -5,6 +5,7 @@
   width: 100%;
   margin-bottom: 2em;
   outline: none;
+  margin-right: 1em;
 }
 
 .DropdownLabel {
@@ -25,8 +26,8 @@
   align-items: center;
   justify-content: space-between;
   border-bottom: 2px solid #d5d9dc;
-  padding-bottom: 0.3em;
   padding-top: 0.3em;
+  padding-bottom: 0.3em;
   padding-right: 0.5em;
   cursor: pointer;
 }
@@ -37,6 +38,7 @@
   font-size: 1.5rem;
   letter-spacing: 0.02em;
   color: #0b1d2e;
+  height: 1.75rem;
 }
 
 .DropdownImage {

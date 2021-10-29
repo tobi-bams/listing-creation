@@ -61,11 +61,13 @@ const Asset = () => {
         label="Asset title"
         onChange={titleOnChangeHandler}
         value={title}
+        type="text"
       />
       <Input
         label="Description (max. 72 symbols)"
         value={description}
         onChange={descriptionOnChangeHandler}
+        type="text"
       />
       <Dropdown
         label="Asset location"
@@ -78,11 +80,13 @@ const Asset = () => {
           label="Minimum investment amount"
           value={minInvestAmount}
           onChange={minInvestAmountOnChangeHandler}
+          type="text"
         />
         <Input
           label="Capital stack"
           value={capitalStack}
           onChange={capitalStackOnChangeHandler}
+          type="text"
         />
       </div>
       <div className={classes.SideBySide}>
@@ -90,11 +94,13 @@ const Asset = () => {
           label="Soft cap"
           value={softCap}
           onChange={softCapOnChangeHandler}
+          type="text"
         />
         <Input
           label="Hard cap"
           value={hardCap}
           onChange={hardCapOnChangeHandler}
+          type="text"
         />
       </div>
     </div>
