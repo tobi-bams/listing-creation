@@ -10,8 +10,7 @@ const Footer = (props) => {
   return (
     <div className={classes.FooterContainer}>
       <Back
-        currentStep={props.currentStep}
-        setCurrentStep={props.setCurrentStep}
+        onClick={props.onClickBack}
       />
       <div>
         <Skip
@@ -19,8 +18,7 @@ const Footer = (props) => {
           setCurrentStep={props.setCurrentStep}
         />
         <Next
-          currentStep={props.currentStep}
-          setCurrentStep={props.setCurrentStep}
+          onClick={props.onClickNext}
         />
       </div>
     </div>
