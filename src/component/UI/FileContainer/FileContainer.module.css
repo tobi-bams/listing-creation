@@ -1,0 +1,75 @@
+.FileContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  border: 2px dashed #d5d9dc;
+  border-radius: 6px;
+  height: 15.625rem;
+  width: 100%;
+}
+
+.FileContainerActive {
+    background-color: #F6FBFF;
+    border: 2px dashed #35A0EE;
+    cursor: pointer;
+}
+
+.FileInnerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.FilePlaceholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.PlaceHolderText {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 0.875rem;
+  letter-spacing: 0.02em;
+  color: #a4aeb4;
+  width: 16rem;
+  text-align: center;
+  margin: 0.5em 0;
+}
+
+.PlaceHolderTextActive {
+    color: #35A0EE;
+}
+
+.InputContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.FileInputLabel {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #a4aeb4;
+  width: 13.56rem;
+  border: 1.5px solid #D5D9DC;
+  border-radius: 4px;
+  padding: 0.5em 0;
+  cursor: pointer;
+}
+
+.ActiveFileInputLable {
+    display: none;
+}
+
+.FileInput {
+    display: none;
+}

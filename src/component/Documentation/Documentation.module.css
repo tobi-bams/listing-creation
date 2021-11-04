@@ -1,0 +1,70 @@
+.DocumentationContainer {
+  display: flex;
+  flex-direction: column;
+  width: 35.125em;
+  margin-top: 3em;
+  box-sizing: border-box;
+}
+
+.DocumentationHeaderContainer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2em;
+}
+
+.DocumentationHeader {
+  font-family: "Montserrat Alternates";
+  letter-spacing: 0.02em;
+  font-weight: 800;
+  color: #0b1d2e;
+  font-size: 1.75rem;
+  margin-bottom: 0.5em;
+}
+
+.DocumentationDescription {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+  color: #a4aeb4;
+}
+
+.AddFolderContainer {
+  display: flex;
+  align-items: center;
+  margin: 1.5em 0 0.5em 0;
+}
+
+.PlusSign {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 1.5rem;
+  letter-spacing: 0.02em;
+  color: #35a0ee;
+  margin-right: 0.5em;
+}
+
+.AddFolder {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+  color: #35a0ee;
+  cursor: pointer;
+}
+
+.FileNameContainer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5em;
+}
+
+.FileName {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 1.1rem;
+  letter-spacing: 0.02em;
+  color: #a4aeb4;
+  text-transform: capitalize;
+  margin-bottom: 0.5em;
+}
