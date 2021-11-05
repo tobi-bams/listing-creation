@@ -7,6 +7,7 @@ import Header from "./component/Header/Header";
 import Asset from "./component/Assets/Asset";
 import Revenue from "./component/Revenue/Revenue";
 import Documentation from "./component/Documentation/Documentation";
+import Gallary from "./component/Gallary/Gallary";
 
 const allDataHolder = {
   title: "",
@@ -24,8 +25,10 @@ const allDataHolder = {
   expectedReturn: "",
   lunchDate: "",
   closingDate: "",
-  folderName: "",
-  documentationFiles: []
+  documentationFolderName: "",
+  documentationFiles: [],
+  gallaryFolderName: "",
+  gallaryFiles: []
 };
 
 function App() {
@@ -60,6 +63,17 @@ function App() {
 
         {currentStep === 3 ? (
           <Documentation
+            allData={allData}
+            currentStep={currentStep}
+            setCurrentStep={setCurrentStep}
+            setAllData={setAllData}
+          />
+        ) : (
+          ""
+        )}
+
+        {currentStep === 4 ? (
+          <Gallary
             allData={allData}
             currentStep={currentStep}
             setCurrentStep={setCurrentStep}

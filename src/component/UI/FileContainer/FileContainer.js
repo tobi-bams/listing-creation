@@ -25,25 +25,21 @@ const FileContainer = (props) => {
   
   const dragOver = (e) => {
     e.preventDefault();
-    e.stopPropagation();
     setDragActive(true);
   };
 
   const dragEnter = (e) => {
     e.preventDefault();
-    e.stopPropagation();
     setDragActive(true);
   };
 
   const dragLeave = (e) => {
     e.preventDefault();
-    e.stopPropagation();
     setDragActive(false);
   };
 
   const dropFile = (e) => {
     e.preventDefault();
-    e.stopPropagation();
     const files = e.dataTransfer.files;
     imageHandler(files);
     setDragActive(false);

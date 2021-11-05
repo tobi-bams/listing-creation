@@ -1,29 +1,27 @@
 import React, { useState } from "react";
 
-import classes from "./Documentation.module.css";
+import classes from "./Gallary.module.css";
 import Input from "../UI/Input/Input";
-import Footer from "../Footer/Footer";
 import FileContainer from "../UI/FileContainer/FileContainer";
+import Footer from "../Footer/Footer";
 
-const Documentatioin = (props) => {
-  const [documentationFolderName, setFolderName] = useState(
-    props.allData.documentationFolderName
+const Gallary = (props) => {
+  const [gallaryFolderName, setGallaryFolder] = useState(
+    props.allData.gallaryFolderName
   );
-  const [documentationFiles, setDocumentationFiles] = useState(
-    props.allData.documentationFiles
-  );
+  const [gallaryFiles, setGallaryFiles] = useState(props.allData.gallaryFiles);
 
-  const folderNameOnChangeHandler = (e) => {
-    setFolderName(e.target.value);
+  const gallaryFolderOnChangeHandler = (e) => {
+    setGallaryFolder(e.target.value);
   };
 
   const onNextEventHandler = () => {
-    if (props.currentStep < 4) {
+    if (props.currentStep < 5) {
       props.setAllData((data) => {
         return {
           ...data,
-          documentationFolderName,
-          documentationFiles,
+          gallaryFolderName,
+          gallaryFiles,
         };
       });
       props.setCurrentStep(props.currentStep + 1);
@@ -35,8 +33,8 @@ const Documentatioin = (props) => {
       props.setAllData((data) => {
         return {
           ...data,
-          documentationFolderName,
-          documentationFiles,
+          gallaryFolderName,
+          gallaryFiles,
         };
       });
       props.setCurrentStep(props.currentStep - 1);
@@ -45,28 +43,27 @@ const Documentatioin = (props) => {
 
   return (
     <>
-      <div className={classes.DocumentationContainer}>
-        <div className={classes.DocumentationHeaderContainer}>
-          <h2 className={classes.DocumentationHeader}>Documentation</h2>
-          <p className={classes.DocumentationDescription}>
-            We also don’t like unnecessary bureaucracy but by law we are obliged
-            to check your documentation before publishing
+      <div className={classes.GallaryContainer}>
+        <div className={classes.GallaryHeaderContainer}>
+          <h2 className={classes.GallaryHeader}>Gallary</h2>
+          <p className={classes.GallaryDescription}>
+            This is an important part of the asset profile. Upload a selection
+            of quality photos of your property here to attract investors
           </p>
         </div>
-
         <Input
           label="Folder name"
+          value={gallaryFolderName}
+          onChange={gallaryFolderOnChangeHandler}
           type="text"
-          value={documentationFolderName}
-          onChange={folderNameOnChangeHandler}
         />
-        <FileContainer setFiles={setDocumentationFiles} />
+        <FileContainer setFiles={setGallaryFiles} />
         <div className={classes.AddFolderContainer}>
           <p className={classes.PlusSign}>+</p>
           <p className={classes.AddFolder}>Add new folder</p>
         </div>
         <div className={classes.FileNameContainer}>
-          {documentationFiles.map((file, index) => (
+          {gallaryFiles.map((file, index) => (
             <p key={file.fileName} className={classes.FileName}>
               {`${index + 1}. ${file.fileName}`}
             </p>
@@ -81,4 +78,4 @@ const Documentatioin = (props) => {
   );
 };
 
-export default Documentatioin;
+export default Gallary;
