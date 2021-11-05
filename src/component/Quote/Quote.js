@@ -4,7 +4,7 @@ import classes from "./Quote.module.css";
 import Slide from "../../assets/slide.svg";
 import Quotaton from "../../assets/quotation.svg";
 
-const Quote = () => {
+const Quote = (props) => {
   return (
     <div className={classes.QuoteContainer}>
       <div>
@@ -12,8 +12,10 @@ const Quote = () => {
       </div>
       <div className={classes.MainQuoteContainer}>
         <p className={classes.QuoteContent}>
-          Streamlined access, data-driven investments, liquidity, powered by the
-          blockchain — all of these is about United Properties
+          {props.currentStep === 5
+            ? `Real estate should be like icing on the cake for every investor! Experience we provide is exciting and rewarding as possible`
+            : `Streamlined access, data-driven investments, liquidity, powered by the
+          blockchain — all of these is about United Properties`}
         </p>
         <div className={classes.QuoteFooter}>
           <p className={classes.QuoteAuthor}>Cody Drew</p>

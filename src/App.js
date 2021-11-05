@@ -8,6 +8,7 @@ import Asset from "./component/Assets/Asset";
 import Revenue from "./component/Revenue/Revenue";
 import Documentation from "./component/Documentation/Documentation";
 import Gallary from "./component/Gallary/Gallary";
+import Confirmation from "./component/Confirmation/Confirmation";
 
 const allDataHolder = {
   title: "",
@@ -28,7 +29,7 @@ const allDataHolder = {
   documentationFolderName: "",
   documentationFiles: [],
   gallaryFolderName: "",
-  gallaryFiles: []
+  gallaryFiles: [],
 };
 
 function App() {
@@ -78,6 +79,15 @@ function App() {
             currentStep={currentStep}
             setCurrentStep={setCurrentStep}
             setAllData={setAllData}
+          />
+        ) : (
+          ""
+        )}
+        {currentStep === 5 ? (
+          <Confirmation
+            allData={allData}
+            currentStep={currentStep}
+            setCurrentStep={setCurrentStep}
           />
         ) : (
           ""

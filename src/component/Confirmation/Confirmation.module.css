@@ -1,0 +1,156 @@
+.ConfirmationContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 3em;
+  box-sizing: border-box;
+}
+
+.ConfirmationHeaderContainer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2em;
+  width: 35.125em;
+}
+
+.ConfirmationHeader {
+  font-family: "Montserrat Alternates";
+  letter-spacing: 0.02em;
+  font-weight: 800;
+  color: #0b1d2e;
+  font-size: 1.75rem;
+  margin-bottom: 0.5em;
+}
+
+.ConfirmationDescription {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+  color: #a4aeb4;
+}
+
+.AmountSpan {
+  color: #35a0ee;
+  font-weight: 600;
+}
+
+.ConfirmationDetailsContainer {
+  display: flex;
+  margin-bottom: 1em;
+}
+
+.LeftHandContainer {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #c3ced8;
+  box-shadow: 0px 0px 24px rgba(29, 77, 112, 0.05);
+  border-radius: 6px;
+  background-color: #ffffff;
+  width: 24.25em;
+  margin-right: 3em;
+  height: 100%;
+}
+
+.ImageContainer {
+  height: 50%;
+}
+
+.ImagePlaceHolder {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #a4aeb4;
+  text-align: center;
+  margin: 2em 0;
+}
+
+.PropertyImage {
+  max-width: 100%;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+}
+
+.LeftSideBottom {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+
+.PropertyDetail {
+  display: flex;
+  flex-direction: column;
+}
+
+.PropertyName {
+  font-family: "Montserrat Alternates";
+  font-weight: bold;
+  font-size: 1.31rem;
+  letter-spacing: 0.02em;
+  color: #07111b;
+}
+
+.PropertyLocationContainer {
+  display: flex;
+  align-items: center;
+  margin-top: 0.3em;
+}
+
+.LocationImage {
+  margin-right: 0.5em;
+}
+
+.Location {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
+.PropertyDescription {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 0.875rem;
+  letter-spacing: 0.02em;
+  color: #07111B;;
+  margin: 1em 0;
+}
+
+.PriceDetailContainer {
+  display: flex;
+  align-items: center;
+}
+
+.PropertyValueContainer {
+  display: flex;
+  flex-direction: column;
+  margin-right: 2em;
+}
+
+.PropertyValue {
+  font-family: "Montserrat Alternates";
+  font-weight: bold;
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+  color: #07111b;
+  margin-bottom: 0.2em;
+  margin-top: 0.2em;
+}
+
+.PropertyLabel {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: #a4aeb4;
+}
+
+.RightHandContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.RightValueContainer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5em;
+}
