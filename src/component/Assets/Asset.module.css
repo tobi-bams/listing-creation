@@ -27,9 +27,26 @@
   font-size: 1rem;
   letter-spacing: 0.02em;
   color: #a4aeb4;
+  text-align: justify;
 }
 
 .SideBySide {
   display: flex;
   align-items: center;
+}
+
+@media (max-width: 414px) {
+  .AssetContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 3em;
+    box-sizing: border-box;
+  }
+
+  .SideBySide {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
 }

@@ -28,6 +28,7 @@
   font-size: 1rem;
   letter-spacing: 0.02em;
   color: #a4aeb4;
+  text-align: justify;
 }
 
 .AmountSpan {
@@ -112,7 +113,7 @@
   font-weight: 500;
   font-size: 0.875rem;
   letter-spacing: 0.02em;
-  color: #07111B;;
+  color: #07111b;
   margin: 1em 0;
 }
 
@@ -153,4 +154,33 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 1.5em;
+}
+
+@media (max-width: 414px) {
+  .ConfirmationHeaderContainer {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2em;
+    width: 100%;
+  }
+
+  .ConfirmationDetailsContainer {
+    display: flex;
+    margin-bottom: 1em;
+    flex-direction: column;
+  }
+
+  .LeftHandContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-right: 0em;
+    margin-bottom: 2em;
+  }
+
+  .PriceDetailContainer {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
 }

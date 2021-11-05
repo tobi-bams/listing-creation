@@ -37,3 +37,10 @@
   font-weight: 600;
   text-decoration: none;
 }
+
+
+@media (max-width: 414px) {
+  .HelpContainer {
+    display: none;
+  }
+}

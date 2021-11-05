@@ -3,3 +3,17 @@
   background-color: #ffffff;
   padding: 1.5em 5em;
 }
+
+@media (max-width: 768px) {
+  .Container {
+    margin-left: 0;
+    padding: 1em 3em;
+  }
+}
+
+@media (max-width: 414px) {
+  .Container {
+    margin-left: 0;
+    padding: 1em 1.5em;
+  }
+}

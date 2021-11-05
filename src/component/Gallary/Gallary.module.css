@@ -27,6 +27,7 @@
   font-size: 1rem;
   letter-spacing: 0.02em;
   color: #a4aeb4;
+  text-align: justify;
 }
 
 
@@ -68,4 +69,14 @@
     color: #a4aeb4;
     text-transform: capitalize;
     margin-bottom: 0.5em;
+  }
+
+  @media (max-width: 414px) {
+    .GallaryContainer {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin-top: 3em;
+      box-sizing: border-box;
+    }
   }

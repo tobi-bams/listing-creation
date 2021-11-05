@@ -12,3 +12,9 @@
   outline: none;
   cursor: pointer;
 }
+
+@media (max-width: 414px) {
+  .SkipButton {
+    display: none;
+  }
+}

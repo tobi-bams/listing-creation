@@ -23,3 +23,9 @@
   opacity: 0.3;
   z-index: -1;
 }
+
+@media (max-width: 768px) {
+  .SideBarContainer {
+    display: none;
+  }
+}

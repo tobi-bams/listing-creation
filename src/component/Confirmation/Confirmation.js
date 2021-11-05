@@ -56,7 +56,7 @@ const Confirmation = (props) => {
               <div className={classes.PriceDetailContainer}>
                 <div className={classes.PropertyValueContainer}>
                   <p className={classes.PropertyValue}>
-                    ${props.allData.minInvestAmount}
+                    {`$${props.allData.minInvestAmount}`}
                   </p>
                   <p className={classes.PropertyLabel}>Min. Investment</p>
                 </div>
